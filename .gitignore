@@ -1,0 +1,14 @@
+# ignore virtual environment
+.venv/
+venv/
+
+# ignore big files to be downloaded via Google Drive
+data/
+*.bin
+dataset_processed*
+*.csv
+
+data/processed_dataset.csv
+
+__pycache__/
+
