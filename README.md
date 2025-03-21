@@ -7,8 +7,9 @@ Welcome to the **Recipe Recommender**, an AI-powered system for retrieving recip
 ## 📌 Features
 - **Natural language search** for recipes based on ingredient descriptions or dish names.
 - **Multilingual support**: English, Portuguese, and Spanish.
-- **AI-generated images** of the retrieved recipes using Stable Diffusion.
+- **AI-generated images** of the retrieved recipes using Stable Diffusion (Colab version only).
 - **Efficient search** using FAISS and precomputed embeddings.
+- **Dataset download automation** via Google Drive.
 
 ---
 
@@ -16,8 +17,8 @@ Welcome to the **Recipe Recommender**, an AI-powered system for retrieving recip
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/mikael-vestri/recipe-recommender.git
-cd recipe-recommender
+git clone https://github.com/mikael-vestri/recipe-recommender2.git
+cd recipe-recommender2
 ```
 
 ### 2️⃣ Install Dependencies
@@ -26,40 +27,43 @@ Ensure you have Python 3.8+ installed. Then, install the required packages:
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Run the Recipe Search
+### 3️⃣ Download Required Data
+Since FAISS index and dataset files are large, they are stored in Google Drive. Run the script below to download them:
+```bash
+python download_data.py
+```
+
+### 4️⃣ Run the Recipe Search
 Run the main script to search for recipes:
 ```bash
-python src/main.py
+python main.py
 ```
 This will prompt you to:
 - Select a language.
 - Enter a search query (e.g., "chocolate cake").
 - Retrieve the best matching recipes and display their details.
-- Generate an AI-rendered image of the selected recipe.
 
 ---
 
 ## 📂 Repository Structure
 
-📁 `recipe-recommender/`  
+📁 `recipe-recommender2/`  
 ├── 📄 `README.md` *(This document)*  
 ├── 📄 `requirements.txt` *(Dependencies list)*  
-├── 📄 `documentation.pdf` *(Project report & methodology explanation)*  
+├── 📄 `Recipe Recommendation AI Project.pdf` *(Project report & methodology explanation)*  
+├── 📄 `download_data.py` *(Script to download required datasets from Google Drive)*  
 ├── 📁 `src/` *(Main project scripts)*  
-│   ├── 📄 `main.py` *(Main script to run the recipe search & image generation)*  
-│   ├── 📄 `image_generation.py` *(Stable Diffusion-based image generation)*  
-│   ├── 📄 `utils.py` *(Utility functions)*  
-├── 📁 `data_processing/` *(Optional: Scripts for dataset processing & FAISS index creation)*  
-│   ├── 📄 `vectorize_dataset.py` *(Precomputes embeddings & builds FAISS index)*  
-│   ├── 📄 `preprocess_data.py` *(Dataset cleaning & preparation)*  
-├── 📁 `examples/` *(Example queries & generated images)*  
-│   ├── 📄 `query_example_1.json` *(Example FAISS output)*  
-│   ├── 🖼️ `screenshot_1.png` *(Screenshot of the app in action)*  
+│   ├── 📄 `main.py` *(Main script to run the recipe search)*  
+│   ├── 📄 `search.py` *(Handles FAISS search and recipe retrieval)*  
+│   ├── 📄 `translate.py` *(Handles translation of recipes into multiple languages)*  
+│   ├── 📄 `generate_image.py` *(AI-based recipe image generation - Only for Colab)*  
+│   ├── 📄 `vectorize.py` *(Script to process and vectorize the dataset)*  
+│   ├── 📄 `preprocess.py` *(Dataset cleaning & preparation)*  
 
 ---
 
 ## 📖 Methodology
-For a detailed explanation of the models used (FAISS, Sentence Transformers, Stable Diffusion), see **`documentation.pdf`**.
+For a detailed explanation of the models used (FAISS, Sentence Transformers, Stable Diffusion), see **`Recipe Recommendation AI Project.pdf`**.
 
 ---
 
