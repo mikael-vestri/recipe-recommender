@@ -76,7 +76,7 @@ If you want to **run the program with AI-generated images**, please use the Goog
 
 For users who want to **run this project directly in Google Colab**, we provide a ready-to-use notebook:
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)]([YOUR_COLAB_LINK_HERE](https://colab.research.google.com/drive/1PYYVbD4gGxdN7VNS-ifR-CMRgqXeDtFE?usp=sharing))
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1PYYVbD4gGxdN7VNS-ifR-CMRgqXeDtFE?usp=sharing)
 
 Alternatively, you can download the Colab notebook from this repository and upload it manually:
 
