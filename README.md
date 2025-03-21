@@ -67,6 +67,23 @@ For a detailed explanation of the models used (FAISS, Sentence Transformers, Sta
 
 ---
 
+## ⚠️ IMPORTANT NOTICE
+
+**The Python scripts in this repository no longer include image generation** due to computational power limitations.  
+If you want to **run the program with AI-generated images**, please use the Google Colab version as described below.
+
+## 🔥 Google Colab Version
+
+For users who want to **run this project directly in Google Colab**, we provide a ready-to-use notebook:
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)]([YOUR_COLAB_LINK_HERE](https://colab.research.google.com/drive/1PYYVbD4gGxdN7VNS-ifR-CMRgqXeDtFE?usp=sharing))
+
+Alternatively, you can download the Colab notebook from this repository and upload it manually:
+
+📂 **[Recipe_Recommender_Colab.ipynb](./Recipe_Recommender_Colab.ipynb)**
+
+---
+
 ## 🛠️ Future Improvements
 - Improve embedding quality for better search results.
 - Enhance image generation with more refined prompts.
