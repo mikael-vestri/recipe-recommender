@@ -17,7 +17,7 @@ Welcome to the **Recipe Recommender**, an AI-powered system for retrieving recip
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/mikael-vestri/recipe-recommender2.git
+git clone https://github.com/mikael-vestri/recipe-recommender.git
 cd recipe-recommender2
 ```
 
