@@ -27,6 +27,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-https://drive.google.com/drive/folders/1LBS3y7Rvwf-tBcL6cYpLVp-J6TI2MCLP?usp=drive_link
